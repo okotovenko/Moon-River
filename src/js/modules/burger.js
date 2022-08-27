@@ -103,18 +103,3 @@ burger.addEventListener('click', function () {
 
 
 
-//-------------------------------------------------------
-
-// navSecondTwo.addEventListener('click', function () {
-// 	navSecondTwo.classList.add('active');
-// 	navSecondOneId.classList.remove('active');
-// })
-
-
-// burger.addEventListener('click', function () {
-// 	burger.classList.remove('active');
-
-// })
-
-
-

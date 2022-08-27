@@ -354,7 +354,6 @@ body {
   width: 100%;
   display: flex;
   height: calc(100vh - 171px);
-  overflow: hidden;
 }
 @media (max-width: 426px) {
   .title {
@@ -553,7 +552,7 @@ body {
 @media (max-width: 426px) {
   .short {
     height: auto;
-    top: calc((100vh - 140px) * -2);
+    top: calc((100vh - 140px) * -3);
   }
 }
 .short__nav {
@@ -618,8 +617,8 @@ body {
     top: 0;
     flex-direction: column;
     gap: 0rem;
+    display: none;
     transition: 0.2s ease;
-    border: 1px solid #fff;
   }
 }
 .nav__second.active {
@@ -1541,7 +1540,7 @@ a.short__show {
 }
 @media (max-width: 426px) {
   .contacts {
-    flex-direction: column;
+    display: none;
   }
 }
 .contacts__img {

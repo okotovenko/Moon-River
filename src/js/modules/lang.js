@@ -7,10 +7,9 @@ let arrLang = {
 		'seeCol': 'See collection',
 		'phone': 'Hotline phone',
 		'subscribe': 'Subscribe for news',
-		'email': 'Enter',
 		'jewelry': 'Jewelry',
 		'for': 'For whom',
-		'forweman': 'For weaman',
+		'forweman': 'For woman',
 		'forman': 'For man',
 		'forchildren': 'For children',
 		'categories': 'Categories',
@@ -32,6 +31,16 @@ let arrLang = {
 		'leather': 'Leather products',
 		'weeding': 'Wedding decorations',
 		'other': 'Other',
+		'go': 'Go to section',
+		'find': 'Find a boutique near you',
+		'enter': 'Enter your address and find out about the closest boutiques to',
+		'yellowWhite': 'Yellow, White, Pink gold',
+		'sapphire': 'Yellow gold, sapphire',
+		'pearl': 'Yellow gold, pearl',
+		'social': 'We are in social networks',
+		'phone_shop': 'flagship store phone',
+
+
 	},
 	'ru': {
 		'ring': 'кольцо',
@@ -41,7 +50,6 @@ let arrLang = {
 		'seeCol': 'Cмотреть коллекцию',
 		'phone': 'телефон горячей линии',
 		'subscribe': 'подпишитесь на новости',
-		'email': 'Введите',
 		'jewelry': 'Ювелирные изделия',
 		'for': 'для кого',
 		'forweman': 'Для женщин',
@@ -66,6 +74,15 @@ let arrLang = {
 		'leather': 'изделия из кожи',
 		'weeding': 'cвадебные украшени',
 		'other': 'другое',
+		'go': 'Перейти в раздел',
+		'find': 'Найди бутик около себя',
+		'enter': 'Введите свой адрес и узнайте о самых ближайших бутиках к вам',
+		'yellowWhite': 'Желтое, белое, розовое золото',
+		'sapphire': 'Желтое золото, сапфир',
+		'pearl': 'Желтое золото, жемчуг',
+		'social': 'Мы в социальных сетях',
+		'phone_shop': 'телефон флагманского магазина',
+
 	}
 }
 
@@ -73,8 +90,15 @@ $(function () {
 	$('.translate').click(function () {
 		let lang = $(this).attr('id');
 
+		$('.input-email').attr("placeholder", "Enter E-mail");
+		$('.input-search').attr("placeholder", "Search");
 		$('.lang').each(function (index, item) {
 			$(this).text(arrLang[lang][$(this).attr('key')]);
 		});
 	});
 });
+
+// $('button').on('click', function() {
+// 	$('input').attr("placeholder", "e-mail");
+// });
+
